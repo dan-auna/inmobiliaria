@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nuvia Inmobiliaria</title>
+<meta name="description" content="Panel comercial inmobiliario para Perú: proyectos, propiedades, asesores y CRM (datos de demostración).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Instrument+Serif&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="app" id="app">
+  <aside class="side">
+    <div class="brand">
+      <div class="brand-mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l6-4v17M10 21V11l10 3v7M3 21h18M7 11h.01M7 15h.01M14 17h.01M17 17h.01"/></svg></div>
+      <div><b>Nuvia</b><span>Inmobiliaria</span></div>
+    </div>
+    <nav class="nav" id="nav">
+      <div class="nav-label">Gestión</div>
+      <a href="#resumen" data-v="resumen"><svg viewBox="0 0 24 24"><path d="M3 12 12 4l9 8M5 10v10h14V10"/></svg>Resumen</a>
+      <a href="#proyectos" data-v="proyectos"><svg viewBox="0 0 24 24"><path d="M4 21V6l8-3v18M12 9l8 3v9M2 21h20M8 8h.01M8 12h.01M8 16h.01"/></svg>Proyectos</a>
+      <a href="#propiedades" data-v="propiedades"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>Propiedades</a>
+      <a href="#asesores" data-v="asesores"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.6 3.2-5.5 6.5-5.5s5.9 1.9 6.5 5.5M17 4.5a3.5 3.5 0 0 1 0 7M18.5 14.8c1.7.7 2.7 2.3 3 5.2"/></svg>Asesores</a>
+      <div class="nav-label">Clientes</div>
+      <a href="#crm" data-v="crm"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="5" height="16" rx="1.5"/><rect x="10" y="4" width="5" height="10" rx="1.5"/><rect x="17" y="4" width="4" height="13" rx="1.5"/></svg>CRM<span class="badge" id="crm-badge">0</span></a>
+    </nav>
+    <div class="side-foot">
+      <div class="me"><div class="av" style="background:#0e8f89">PL</div><div><b>Patricia León</b><span>Administración</span></div></div>
+      <div class="demo">Datos de demostración · TC ref. 3.72</div>
+    </div>
+  </aside>
+  <main class="main">
+    <header class="head">
+      <div>
+        <div class="eyebrow"><span class="live"></span><span id="today"></span></div>
+        <h1 class="title" id="title">Resumen</h1>
+      </div>
+      <div class="head-r">
+        <div class="seg" id="cur" role="group" aria-label="Moneda"><button data-cur="PEN" aria-pressed="false">S/</button><button data-cur="USD" aria-pressed="true">US$</button></div>
+        <button class="iconbtn" id="theme" title="Cambiar tema" aria-label="Cambiar tema"><svg viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+      </div>
+    </header>
+    <div id="tb"></div>
+    <div id="body"></div>
+  </main>
+</div>
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-hidden="true"></aside>
+<div class="tip" id="tip"></div>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="js/data.js" defer></script>
+<script src="js/core.js" defer></script>
+<script src="js/views-resumen-proyectos.js" defer></script>
+<script src="js/views-propiedades-asesores-crm.js" defer></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>
